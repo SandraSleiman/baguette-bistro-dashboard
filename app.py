@@ -54,7 +54,7 @@ st.markdown(
     }}
 
     .block-container {{
-        padding-top: 2.5rem;
+        padding-top: 0.5rem;
         padding-bottom: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -126,6 +126,10 @@ st.markdown(
         border-right: 1px solid {BORDER};
         min-width: 260px !important;
         max-width: 260px !important;
+    }}
+
+    section[data-testid="stSidebar"] > div {{
+    padding-top: 0.5rem;
     }}
 
     section[data-testid="stSidebar"] .stMarkdown h2,
