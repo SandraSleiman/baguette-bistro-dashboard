@@ -54,8 +54,8 @@ st.markdown(
     }}
 
     .block-container {{
-        padding-top: 0.5rem;
-        padding-bottom: 2rem;
+        padding-top: 0rem;
+        padding-bottom: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
         max-width: 1500px;
@@ -67,8 +67,8 @@ st.markdown(
         color: {DEEP_RED};
         letter-spacing: 3px;
         text-transform: uppercase;
-        margin-bottom: 18px;
-        margin-top: 6px;
+        margin-bottom: 10px;
+        margin-top: 0px;
     }}
 
     .brand-title::after {{
@@ -130,13 +130,13 @@ st.markdown(
     }}
 
     section[data-testid="stSidebar"] > div {{
-        padding-top: 0.25rem !important;
+        padding-top: 0rem !important;
         overflow: hidden !important;
     }}
 
     div[data-testid="stSidebarContent"] {{
-        padding-top: 0.25rem !important;
-        padding-bottom: 0.25rem !important;
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
         overflow: hidden !important;
         height: 100vh !important;
     }}
