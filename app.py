@@ -54,21 +54,22 @@ st.markdown(
     }}
 
     .block-container {{
-        padding-top: 0rem;
-        padding-bottom: 1rem;
+        padding-top: 0rem !important;
+        padding-bottom: 1rem !important;
         padding-left: 2rem;
         padding-right: 2rem;
         max-width: 1500px;
     }}
 
+    /* -------- BRAND -------- */
     .brand-title {{
         font-size: 22px;
         font-weight: 700;
         color: {DEEP_RED};
         letter-spacing: 3px;
         text-transform: uppercase;
-        margin-bottom: 8px;
-        margin-top: -8px;
+        margin-bottom: 4px !important;
+        margin-top: -12px !important;
     }}
 
     .brand-title::after {{
@@ -77,10 +78,11 @@ st.markdown(
         width: 60px;
         height: 3px;
         background-color: {PRIMARY_RED};
-        margin-top: 8px;
+        margin-top: 6px;
         border-radius: 2px;
     }}
 
+    /* -------- KPI -------- */
     .kpi-card {{
         background: {CARD_BG};
         border: 1px solid {BORDER};
@@ -94,7 +96,7 @@ st.markdown(
         font-size: 0.78rem;
         font-weight: 600;
         color: {MUTED};
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }}
 
     .kpi-value {{
@@ -106,9 +108,10 @@ st.markdown(
     .kpi-note {{
         font-size: 0.74rem;
         color: {MUTED};
-        margin-top: 6px;
+        margin-top: 4px;
     }}
 
+    /* -------- LAYOUT -------- */
     div[data-testid="column"] {{
         padding: 0 6px !important;
     }}
@@ -121,44 +124,48 @@ st.markdown(
         box-shadow: 0 2px 8px rgba(0,0,0,0.03);
     }}
 
+    div[data-testid="stVerticalBlock"] > div {{
+        gap: 0.2rem;
+    }}
+
+    /* -------- SIDEBAR -------- */
     section[data-testid="stSidebar"] {{
         background-color: #fbf7f5;
         border-right: 1px solid {BORDER};
         min-width: 260px !important;
         max-width: 260px !important;
-        overflow: hidden !important;
     }}
 
     section[data-testid="stSidebar"] > div:first-child {{
         padding-top: 0rem !important;
         margin-top: 0rem !important;
-        overflow: hidden !important;
     }}
 
     div[data-testid="stSidebarContent"] {{
         padding-top: 0rem !important;
         margin-top: 0rem !important;
         padding-bottom: 0rem !important;
-        overflow: hidden !important;
-        height: 100vh !important;
     }}
 
+    /* -------- SIDEBAR TEXT -------- */
     section[data-testid="stSidebar"] .stMarkdown h2,
     section[data-testid="stSidebar"] .stMarkdown h3 {{
         color: {DEEP_RED};
+        margin-top: 0.2rem !important;
+        margin-bottom: 0.35rem !important;
     }}
 
-    label, .stDateInput label, .stMultiSelect label {{
+    section[data-testid="stSidebar"] .stMarkdown {{
+        margin-bottom: 0rem !important;
+    }}
+
+    section[data-testid="stSidebar"] label {{
         font-weight: 600 !important;
         color: #4e4743 !important;
+        margin-bottom: 0.15rem !important;
     }}
 
-    span[data-baseweb="tag"] {{
-        background-color: #F4C7C7 !important;
-        color: #6B1E1E !important;
-        border: none !important;
-    }}
-
+    /* -------- INPUT SPACING -------- */
     div[data-testid="stSelectbox"],
     div[data-testid="stNumberInput"],
     div[data-testid="stSlider"] {{
@@ -166,19 +173,26 @@ st.markdown(
     }}
 
     div[data-testid="stMarkdownContainer"] p {{
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.2rem;
     }}
 
-    div[data-testid="stVerticalBlock"] > div {{
-        gap: 0.35rem;
+    /* -------- MULTISELECT TAGS -------- */
+    span[data-baseweb="tag"] {{
+        background-color: #F4C7C7 !important;
+        color: #6B1E1E !important;
+        border: none !important;
+        margin-top: 0.1rem !important;
+        margin-bottom: 0.1rem !important;
     }}
 
+    /* -------- BUTTON -------- */
     .stButton > button {{
         border-radius: 10px;
         border: 1px solid {BORDER};
-        padding: 0.55rem 1rem;
+        padding: 0.5rem 0.9rem;
         font-weight: 600;
     }}
+
     </style>
     """,
     unsafe_allow_html=True
