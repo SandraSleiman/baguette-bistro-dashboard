@@ -67,8 +67,8 @@ st.markdown(
         color: {DEEP_RED};
         letter-spacing: 3px;
         text-transform: uppercase;
-        margin-bottom: 10px;
-        margin-top: 0px;
+        margin-bottom: 8px;
+        margin-top: -8px;
     }}
 
     .brand-title::after {{
@@ -129,13 +129,15 @@ st.markdown(
         overflow: hidden !important;
     }}
 
-    section[data-testid="stSidebar"] > div {{
+    section[data-testid="stSidebar"] > div:first-child {{
         padding-top: 0rem !important;
+        margin-top: 0rem !important;
         overflow: hidden !important;
     }}
 
     div[data-testid="stSidebarContent"] {{
         padding-top: 0rem !important;
+        margin-top: 0rem !important;
         padding-bottom: 0rem !important;
         overflow: hidden !important;
         height: 100vh !important;
