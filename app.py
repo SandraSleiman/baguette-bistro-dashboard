@@ -126,10 +126,19 @@ st.markdown(
         border-right: 1px solid {BORDER};
         min-width: 260px !important;
         max-width: 260px !important;
+        overflow: hidden !important;
     }}
 
     section[data-testid="stSidebar"] > div {{
-    padding-top: 0.5rem;
+        padding-top: 0.25rem !important;
+        overflow: hidden !important;
+    }}
+
+    div[data-testid="stSidebarContent"] {{
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+        overflow: hidden !important;
+        height: 100vh !important;
     }}
 
     section[data-testid="stSidebar"] .stMarkdown h2,
